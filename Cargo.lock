@@ -539,6 +539,8 @@ dependencies = [
  "serde 1.0.106 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 1.0.52 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio 0.2.20 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serial_test 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tempfile 3.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "uuid 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -1211,6 +1213,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "serial_test"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "lazy_static 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "parking_lot 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serial_test_derive 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "serial_test_derive"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "proc-macro2 1.0.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "quote 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "syn 1.0.16 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "sha1"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1738,6 +1760,8 @@ dependencies = [
 "checksum serde_derive 1.0.106 (registry+https://github.com/rust-lang/crates.io-index)" = "9e549e3abf4fb8621bd1609f11dfc9f5e50320802273b12f3811a67e6716ea6c"
 "checksum serde_json 1.0.52 (registry+https://github.com/rust-lang/crates.io-index)" = "a7894c8ed05b7a3a279aeb79025fdec1d3158080b75b98a08faf2806bb799edd"
 "checksum serde_urlencoded 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)" = "9ec5d77e2d4c73717816afac02670d5c4f534ea95ed430442cad02e7a6e32c97"
+"checksum serial_test 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "fef5f7c7434b2f2c598adc6f9494648a1e41274a75c0ba4056f680ae0c117fd6"
+"checksum serial_test_derive 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "d08338d8024b227c62bd68a12c7c9883f5c66780abaef15c550dc56f46ee6515"
 "checksum sha1 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "2579985fda508104f7587689507983eadd6a6e84dd35d6d115361f530916fa0d"
 "checksum signal-hook-registry 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "94f478ede9f64724c5d173d7bb56099ec3e2d9fc2774aac65d34b8b890405f41"
 "checksum slab 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)" = "c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8"
