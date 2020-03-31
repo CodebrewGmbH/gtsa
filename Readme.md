@@ -16,7 +16,7 @@ You need to docker or cargo with rust
 
 ### Installing and running
 
-You can install and run it with cargo 
+You can install and run it with cargo
 
 ```bash
 cargo install gtsa
@@ -33,10 +33,10 @@ Or docker build
 
 ```bash
 docker build -t gtsa .
-docker run -p 8080:8080/udp --env SENTRY_DSN=dsn --name gtsa gtsa 
+docker run -p 8080:8080/udp --env SENTRY_DSN=dsn --name gtsa gtsa
 ```
 
-Now you can sent data on udp 
+Now you can sent data on udp
 
 ## Deployment
 
@@ -46,6 +46,7 @@ SENTRY_DSN=xxx
 ```
 
 SENTRY DSN must be only in the new format (without secret key)!
+If you use docker secrets you can specify instead a file with the DSN via `SENTRY_DSN_FILE` env variable.
 
 Also GTSA have a some env variables with default values, but you can edit it:
 ```env
@@ -81,7 +82,7 @@ I hope you know what you need to do.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Mnwa/gtsa/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Mnwa/gtsa/tags).
 
 ## Authors
 
